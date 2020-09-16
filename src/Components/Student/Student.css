@@ -1,0 +1,15 @@
+.student-body {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.image {
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 50%;
+    height: 15vh;
+}
