@@ -1,23 +1,24 @@
 import React from 'react';
 import './Student.css';
 
-const Student = ({student}) => {
-  const {email, company, skill, firstName, lastName, grades, pic} = student;
+const Student = ( props ) => {
+  const { index, student } = props;
+  const { email, company, skill, firstName, lastName, grades, pic } = student;
   const intGrades = grades.map((grade) => parseInt(grade, 10));
   const sum = intGrades.reduce((prevVal, currentVal) => prevVal + currentVal);
-  const avg = (sum / grades.length);
+  const average = (sum / grades.length);
 
-  return (
-    <div className="student-body">
-        <div className="image-div">
-          <img src={pic} className="image" alt="profile pic"/>
-        </div>
-        <div className="text-div">
-          <h3>{firstName + " " + lastName}</h3>
-          <p>{email}</p>
-          <p>{avg}</p>
-        </div>
-    </div>
+  return (      
+      <tr className={`student-body ${index !== 0 ? 'border-top' : ''}`}>
+          <td className="image-div">
+            <img src={pic} className="image" alt="profile pic"/>
+          </td>
+          <td className="text-div">
+            <h2 className="name-heading">{ firstName + " " + lastName }</h2>
+            <p className="sub-description">{ email }</p>
+            <p className="sub-description">{ average }</p>
+          </td>
+      </tr>
   );
 }
 

@@ -1,15 +1,23 @@
-.student-body {
+.td.PerformanceCell {
+    width: 75px;
     font-family: sans-serif;
-    font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
 }
 
+.border-top {
+    border-top: .05em solid grey !important;
+}
+
+.name-heading {
+    text-transform: uppercase;
+}
+
 .image {
-    border-width: 1px;
-    border-color: gray;
+    border: .05em solid grey;
     border-radius: 50%;
     height: 15vh;
+    margin-right: 3em;
 }

@@ -1,3 +1,8 @@
+.table.PerformanceTable {
+    table-layout: fixed;
+    width: 500px;
+}
+
 .classroom-body {
     display: flex;
     flex-direction: column;
