@@ -21,3 +21,17 @@
     height: 15vh;
     margin-right: 3em;
 }
+
+.expand-btn {
+    font-size: 2em;
+    color: grey;
+    padding-left: 10em;
+    outline: none;
+    border: 0px solid transparent;
+}
+
+.tags-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

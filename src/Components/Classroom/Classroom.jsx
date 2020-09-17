@@ -11,8 +11,14 @@ const Classroom = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       const response = await axios.get('https://www.hatchways.io/api/assessment/students');
-      setStudents(response.data.students);
-      setStudentsCopy(response.data.students);
+      const studentsArr = response.data.students;
+      
+      for (const st of studentsArr) {
+        st.tags = [];
+      }
+
+      setStudents(studentsArr);
+      setStudentsCopy(studentsArr);
     }
 
     fetchStudents();
@@ -20,7 +26,7 @@ const Classroom = () => {
 
   const renderStudents = () => {
     return studentsCopy.map((student, index) => {
-      return <Student student={student} index={index} key={index}/>
+      return <Student student={student} students={students} setStudents={setStudents} index={index} key={index}/>
     })
   }
 

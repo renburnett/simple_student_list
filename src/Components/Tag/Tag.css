@@ -1,0 +1,11 @@
+.tag {
+    border-radius: 0.5em;
+    height: 10%;
+    width: inherit;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    padding: 5px;
+    background-color: lime;
+
+}
