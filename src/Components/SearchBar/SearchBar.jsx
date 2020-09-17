@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchBar.css';
 
-const Student = ( { filterByFirstName } ) => {
+const SearchBar = ( { filterByFirstName } ) => {
   return (
       <>
         <form className="search-bar">
@@ -12,4 +12,4 @@ const Student = ( { filterByFirstName } ) => {
   );
 }
 
-export default Student;
+export default SearchBar;

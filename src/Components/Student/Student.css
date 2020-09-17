@@ -27,7 +27,7 @@
     color: grey;
     padding-left: 10em;
     outline: none;
-    border: 0px solid transparent;
+    background: transparent;
 }
 
 .tags-container {

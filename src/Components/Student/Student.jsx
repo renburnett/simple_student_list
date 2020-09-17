@@ -51,7 +51,7 @@ const Student = ( props ) => {
             {gradesShowing && <TagForm setNewTag={setNewTag} addNewTag={addNewTag}/>}
           </td>
           <td className="expand-btn">
-            <button onClick={() => setGradesShowing(!gradesShowing)}>{ gradesShowing ? "-" : "+"}</button>
+            <p className="button" onClick={() => setGradesShowing(!gradesShowing)}>{ gradesShowing ? "-" : "+"}</p>
           </td>
       </tr>
   );

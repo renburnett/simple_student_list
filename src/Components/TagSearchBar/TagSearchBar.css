@@ -1,0 +1,19 @@
+.hr-ting {
+    height: 1px;
+    border: 0;
+    background-color: rgb(172, 169, 169);
+    width: 90%;
+}
+
+.search-bar {
+    color: rgb(172, 169, 169);
+    width: 85%;
+    margin-top: 1em;
+}
+
+.text-input {
+    height: 2em;
+    border: none;
+    border-color: transparent;
+    width: 100%;
+}
